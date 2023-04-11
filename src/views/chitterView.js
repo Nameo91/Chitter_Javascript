@@ -1,4 +1,4 @@
-const ChitterClient = require("../../src/views/chitterClient");
+const ChitterClient = require("../chitterClient");
 
 class ChitterView {
 

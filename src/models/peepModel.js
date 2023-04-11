@@ -1,14 +1,20 @@
 class PeepModel {
+  constructor() {
+    this.peepList = [];
+  }
+
   getPeeps() {
-    // returns the list of peeps
+    return this.peepList;
   }
 
   addPeep(peep) {
-    // adds new peep
+    this.peepList.push(peep);
   }
 
-  setPeeps() {
-    // retrieve peeps from the API
+  setPeeps(peepsFromApi) {
+    peepsFromApi.forEach((peep) => {
+      this.peepList.push(peep);
+    })
   }
 }
 
