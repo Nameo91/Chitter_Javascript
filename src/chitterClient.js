@@ -12,6 +12,18 @@ class ChitterClient{
       console.log("Failed!", error);
     })
   }
+
+  createUser(userId, passowrd) {
+    // POST to create a new user
+  }
+
+  newSession(userId, password) {
+    // POST to create a new log in session
+  }
+
+  addPeep(uerId, sessionKey, newPeep) {
+    // POST to add new peep
+  }
 }
 
 module.exports = ChitterClient;
