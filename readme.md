@@ -15,3 +15,9 @@ The challenge is building a frontend that interacts with a backend API in javasc
 ## Technical Approach
 
 ## How to run
+
+```
+npm install
+npm run build
+open index.html
+```

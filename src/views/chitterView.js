@@ -1,12 +1,12 @@
-const ChitterClient = require("../chitterClient");
-
 class ChitterView {
   constructor(model, client, user) {
     this.model = model;
     this.client = client;
     this.user = user;
+
     this.mainContainerEl = document.querySelector('#main-container');
   }
+
   displayPeeps() {
     // display all peeps added
     const allPeeps = this.model.getPeeps();
@@ -32,7 +32,7 @@ class ChitterView {
   displayPeepsFromApi() {
     // display all peeps data from Api
     this.client.loadPeeps((response) => {
-      this.model.setPeep(response);
+      this.model.setPeeps(response);
       this.displayPeeps();
     });
   }
