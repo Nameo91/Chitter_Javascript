@@ -13,7 +13,7 @@ describe('client class', () => {
       "id": 3,
       "body": "my first peep :)"
     }));
-    
+
     client.loadPeeps((returnedData) => {
       expect(returnedData).toEqual({ 
         "id": 3, 
@@ -22,5 +22,6 @@ describe('client class', () => {
 
       done();
     });
-  });
+  })
+  
 })
